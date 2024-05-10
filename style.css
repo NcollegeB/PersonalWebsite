@@ -200,7 +200,7 @@ section {
 .section__text__p1 {
   text-align: center;
 }
-.section__text__p1 {
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -269,4 +269,36 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* About section */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
