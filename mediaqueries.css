@@ -151,11 +151,3 @@
     transform: translateY(-50px);
   }
 }
-
-@media screen and (max-width: 768px) {
-  /* Covers all small devices up to tablet sizes */
-  #about {
-    padding-top: 1vh; /* Reducing top padding for more space to the profile image */
-    transform: translateY(80px); /* Moves the section up slightly */
-  }
-}
