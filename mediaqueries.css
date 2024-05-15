@@ -7,6 +7,14 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
+  #contact #projects {
+    height: fit-content;
+  }
+
+  .section__text {
+    margin-top: 200px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -18,7 +26,7 @@
   }
 
   #experience,
-  experience-details-container {
+  .experience-details-container {
     margin-top: 2rem;
   }
 
@@ -48,6 +56,10 @@
 
   .about-containers {
     margin-top: 0;
+  }
+
+  .section__text {
+    margin-top: 200px;
   }
 }
 
@@ -116,5 +128,22 @@
 
   .text-container {
     text-align: justify;
+  }
+
+  .section__text {
+    margin-top: 200px;
+  }
+
+  #about .about-pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  #about {
+    padding: 1vh;
+  }
+
+  #about .section__text_p1 {
+    margin-top: 0;
   }
 }
