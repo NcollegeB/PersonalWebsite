@@ -135,8 +135,8 @@
   }
 
   #about .about-pic {
-    width: 300px;
-    height: 300px;
+    width: 225px;
+    height: 225px;
   }
 
   #about {
@@ -145,5 +145,9 @@
 
   #about .section__text_p1 {
     margin-top: 0;
+  }
+
+  #about {
+    transform: translateY(-50px);
   }
 }
