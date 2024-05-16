@@ -21,7 +21,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 0, 0);
 }
 
 /* Transition */
@@ -312,11 +312,11 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: black 0.1rem solid;
+  border-color: black;
   text-align: center;
+  box-shadow: 0 3px 15px rgb(253, 141, 141);
 }
 
 .section-container {
@@ -449,10 +449,22 @@ footer p {
 /* Background Section */
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ffffff, #feebfe, #f5c9f2, #f5b3f9);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 200vh;
+}
+
+.details-container {
+  background: linear-gradient(
+    -35deg,
+    rgb(244, 244, 244),
+    rgb(255, 255, 255),
+    rgb(243, 216, 216),
+    rgb(244, 177, 188)
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -465,4 +477,44 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Hover Section */
+
+.hoover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.hoover:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hoover::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: linear-gradient(
+    -45deg,
+    rgb(193, 193, 193),
+    rgb(180, 179, 179),
+    rgb(143, 142, 142),
+    rgb(92, 92, 92)
+  );
+  background-size: 400%, 400%;
+  animation: gradient 2s ease infinite;
+  z-index: -1;
+  transition: transform 0.4s ease;
+  border-radius: 5%;
+}
+
+.hoover {
+  position: relative;
+  font-size: 4rem;
 }
